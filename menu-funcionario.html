@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-funcionario.css">
+    <title>Grupo Forte Academia</title>
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+        <li class="list active">
+            <a href="menu-funcionario.html">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="title">Home</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="alunos-menu-funcionario.html">
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                <span class="title">Alunos</span>
+            </a>
+        </li>
+        
+        <li class="list">
+            <a href="mensagens-funcionario.html">
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                <span class="title">Mensagens</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="formulario.html">
+                <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                <span class="title">Cadastro</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="agendamento.html">
+                <span class="icon"><ion-icon name="id-card-outline"></ion-icon></span>
+                <span class="title">Agendamentos</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="configuração-menu-funcionario.html">
+                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                <span class="title">configurações</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="index.html">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                <span class="title">Sair</span>
+            </a>
+        </li>
+    </ul>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const list = document.querySelectorAll('.list');
+    
+    function activelink() {
+        list.forEach((item) => item.classList.remove('active'));
+        this.classList.add('active');
+    }
+    
+    list.forEach((item) => item.addEventListener('click', activelink));
+  </script>
+
+<div class="conteiner">
+    
+    <div class="inicio">
+     <img src="banner/bem- vindo_20240921_103716_0000.png">
+    </div>
+
+
+    <div class="baner">
+            <img class="selected"
+            src="banner/Trasforme o esforço de hoje nos resultados de amanhã_20240921_085917_0000.png"
+            alt="Image1">
+        <img src="banner/Elegance_20240920_234631_0000.png"
+            alt="Image2">
+        <img src="banner/Horario_20240920_222251_0000.png"
+            alt="Image3">
+            <img src="banner/Comecei Hoje_20240920_233445_0000.png"
+            alt="Image4">
+            <img src="banner/Segunda a sexta das 06h ás 12h_20240921_161634_0000.png"
+            alt="Image4">
+    </div>
+     
+    <div class="meio">
+    
+
+      <h1>Somos muito mais que uma academia,<br>somos uma família. </h1>
+      
+            <img src="banner/ACADEMIA_20240921_122702_0000.png">
+        
+       
+
+    </div>
+
+
+
+   <div class="cards">
+     <h1>Servisos</h1>
+
+   <div class="card">
+    <a href="serviços.html">
+    <img src="treinos grupo forte/Ginastica.jpeg" width="250" height="200"></a>
+    <h3>Ginastica</h3>
+   </div>
+
+   <div class="card">
+    <a href="serviços.html">
+    <img src="treinos grupo forte/muscukação.jpeg" width="250" height="200"></a>
+    <h3>Musculação</h3>
+   </div>
+
+   <div class="card">
+    <a href="serviços.html">
+    <img src="treinos grupo forte/Nutricionista.jpeg" width="250" height="200"></a>
+    <h3>Nutricionista</h3>
+   </div>
+
+   <div class="card">
+    <a href="serviços.html">
+    <img src="treinos grupo forte/Personal.jpeg"width="250" height="200"></a>
+    <h3>Personal Treiner</h3>
+   </div>
+
+   
+
+   </div>
+
+
+
+
+
+   <div class="final">
+    
+    <h1>Nossa Unidade Fica:</h1>
+    <p>Endereço:Av.Piam,N°78 - Nova Piam,Belford Roxo - Rj,26115520</p>
+    <p>Telefone:(21)97098-5655</p>
+    
+    
+    <div class="social-login">
+
+        <div class="social-login-box">
+        <ion-icon name="logo-google" class="social-login-icon"></ion-icon>
+        </div>
+
+        <div class="social-login-box">
+        <ion-icon name="logo-facebook" class="social-login-icon"></ion-icon>
+        </div>
+
+        <div class="social-login-box">
+        <ion-icon name="logo-instagram" class="social-login-icon"></ion-icon>
+        </div>
+        
+        <div class="social-login-box">
+        <ion-icon name="logo-twitter" class="social-login-icon"></ion-icon>
+        </div>
+        </div>
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+   </div>
+
+
+
+   </div>
+
+
+
+</script>
+
+<script src="baner.js"></script> 
+
+
+
+
+</body>
+</html>

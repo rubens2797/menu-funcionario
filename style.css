@@ -1,0 +1,105 @@
+*,
+::after,
+::before {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+
+ display: flex;
+min-height: 100vh;
+ background: url(fundooriginal.jpg);
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ width: 1900px;
+ height: 1000px;
+ 
+}
+
+body,
+textarea{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.form_box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 800px;
+    
+}
+
+.form_box .title{
+    padding: 24px 300px;
+    font-size: 24px;
+    border-bottom: thin solid #ccc;
+}
+
+.form_box form{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 62px;
+}
+
+.form_box input,
+.form_box textarea{
+    width: calc(90% - 300px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid#999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.form_box input{
+    margin-right: 26px;
+   
+}
+
+.form_box input[name=subject]{
+    width: 100%;
+}
+
+.form_box textarea{
+    width: 100%;
+    height: 90px;
+    padding: 16px;
+}
+button{
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #1b44ca;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-limpar{
+    margin-left: 10px;
+}
+
+.sexo{
+    width: calc(90% - 300px);
+    height: 48px;
+}
+
+.sexo input{
+    width: 10%;
+}

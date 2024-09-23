@@ -1,0 +1,344 @@
+*{margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+   }
+   
+   body{
+       display: flex;
+       min-height: 100vh;
+       background-image: url(fundooriginal.jpg);
+       background-position: center;
+       background-size: cover;
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       width: 1900px;
+       height: 1000px;
+    
+       
+   }
+   .navigation{
+     position: fixed;  
+     height: 1000px;
+     background: #424242;
+     width: 70px;
+     box-shadow: 10px 0 0 #143294;
+     border-left: 10px solid #424242;
+     overflow: hidden;
+     transition: 0.5s ;
+   }
+   .navigation:hover{
+       width: 300px; ;
+       
+     }
+   .navigation ul{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       padding-left: 5px;
+       padding-top: 40px;
+   }
+   .navigation ul li{
+       position: relative;
+       list-style: none;
+       width: 100%;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+   }
+  
+   .dropdown li a{
+    position: relative;
+    display: flex;
+    width: 50px;
+    text-decoration: none;
+    color: #fff;
+    
+   }
+
+
+   .navigation ul li a{
+       position: relative;
+       display: flex;
+       width: 100px;
+       text-decoration: none;
+       color: #fff;
+   }
+   .navigation ul li a .icon{
+       position: relative;
+       display: block;
+       min-width: 60px;
+       height: 60px;
+       text-align: center;
+       line-height: 70px;
+       font-size: 1.5rem;
+      z-index: 1;
+   }
+   .navigation ul li a .icon ion-ion{
+       position: relative;
+      font-size: 1.5rem;
+      z-index: 1;
+   }
+   .navigation ul li a .title{
+       position: relative;
+       display: block;
+       padding-left: 10px;
+       height: 60px;
+       line-height: 60px;
+       white-space: nowrap;
+   }
+   .navigation ul li.active{
+       background: #143294;
+       
+   }
+   .navigation ul li.active a::before{
+       content: '';
+       position: absolute;
+       top: -30px;
+       right: 0;
+       width: 30px;
+       background-color: #424242;
+       border-radius:  50%;
+       box-shadow: 15px 15px 0 #143294;
+   }
+   .navigation ul li.active a::after{
+       content: '';
+       position: absolute;
+       bottom: -30px;
+       right: 0;
+       width: 30px;
+       background-color: #424242;
+       border-radius:  50%;
+       box-shadow: 15px -15px 0 #143294;
+   }
+   
+   
+   .texto{
+    height: 300px;
+    width: 700px;
+    margin-left: 80%;
+    margin-top: 50px;
+  
+    
+   }
+
+   .paragrafos{
+    width: 600px;
+    height: 600px;
+   
+    
+   }
+   .paragrafos2{
+    width: 600px;
+    height: 600px;
+    margin-left: 400px;
+   }
+
+  
+ .texto p{
+  text-align: justify;
+ }
+
+ .fotos{
+    display: flex;
+    width: 1900px;
+    height: 600px;
+   padding-right: 250px;
+   margin-top: 15px;
+    
+}
+
+.fotos img{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    
+}
+
+.texto{
+    height: 300px;
+    width: 700px;
+    margin-left: 80%;
+    margin-top: 50px;
+  
+    
+   }
+
+   .paragrafos{
+    width: 600px;
+    height: 600px;
+   
+    
+   }
+   .paragrafos2{
+    width: 600px;
+    height: 600px;
+    margin-left: 400px;
+   }
+
+  
+ .texto p{
+  text-align: justify;
+ }
+
+ .fotos{
+    display: flex;
+    width: 1900px;
+    height: 600px;
+   padding-right: 250px;
+   margin-top: 15px;
+    
+}
+
+.fotos img{
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    
+}
+
+.conteiner{
+    width: 1300px;
+    height:1300px;
+    background-color: #2d2d2d;
+    margin-left: 350px;
+    
+}
+
+.inicio{
+    height: 500px;
+    width: 1300px;
+}
+
+.inicio img{
+    width: 1300px;
+}
+
+.baner{
+    height: 550px;
+    width: 1300px;
+     background-color: #424242;
+max-height: 100%;
+display: flex;
+flex-direction: center;
+justify-content: center;
+align-items: center;
+position:relative;
+
+
+}
+
+
+.baner img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    object-fit: cover;
+    transition: opacity 1000ms;
+
+}
+
+
+.baner img.selected {
+    opacity: 1;
+    }
+
+.meio{
+    height: 600px;
+    width: 1300px;
+    background-color: #424242;
+   
+}
+
+
+.meio img{
+    height: 600px;
+    width: 1300px;
+}
+
+.cards{
+    height: 550px;
+    width: 1300px;
+    background-color: #143294;
+}
+
+.card{
+  width: 250px;  
+  height: 250px;
+background-color: #424242;
+   border-radius: 12px;
+   box-shadow: 4px 4px 12px #424242;
+   display: inline-block;
+  margin: 20px;
+  margin-top: 70px;
+  margin-left: 45px;
+}
+
+.cards img{
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+
+
+.cards h3{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cards h1{
+    text-align: center;
+    padding-top: 25px;
+}
+
+
+.final{
+    height: 300px;
+    width: 1300px;
+    background-color:#2d2d2d;
+    
+}
+
+.final h1{
+    margin-right: 950px;
+    padding-top: 55px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.final p{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.social-login{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-login-box{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    margin-left: 20px;
+    
+}
+.social-login-icon{
+    width: 26px;
+}
+.social-login-box:hover{
+    transform: scale(0.9);
+    color: #21264d;
+}
